@@ -6,17 +6,10 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-
-  /* Expand anything lower than .half to full-width on smaller screens */
-  .gridism .half {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 480px) {
 
-  /* Expand anything lower than .half to full-width on smaller screens */
+  /* Expand anything lower than .whole to full-width on smaller screens */
+  .gridism .half,
   .gridism .third,
   .gridism .two-thirds,
   .gridism .golden-small,

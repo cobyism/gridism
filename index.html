@@ -28,6 +28,32 @@
           <p><strong>grid(ism)</strong> aims to create a responsive CSS grid for creating website layouts. It aims to be robust, practical, and easy to get your head around.</p>
         </div>
       </div>
+      <div class="half right center-on-mobiles">
+        <div class="content">
+          <a href="https://github.com/cobyism/gridism" class="button">View on GitHub</a>
+        </div>
+      </div>
+      <div class="half left center-on-mobiles">
+        <div class="content">
+          <a href="https://github.com/cobyism/gridism/zipball/gh-pages" class="button">Download (Zip)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="principles">
+    <div class="gridism">
+      <div class="content">
+        <h3>Priciples</h3>
+        <p>Here’s what I want out of a grid system.</p>
+        <ol>
+          <li>The system should allow for fluidity, while remaining predictable across devices and resolutions.</li>
+          <li>It should not be necessary to explicitly declare rows, or label which horizontal sections are the first in the row.</li>
+          <li>Each horizontal section should be able to be partitioned and controlled independantly from other sections.</li>
+          <li>Margins on the outside should be the same as internal gutters at all times.</li>
+          <li>The names of classes and usage instructions should be simple, and memorable.</li>
+        </ol>
+      </div>
     </div>
   </section>
 
@@ -51,6 +77,35 @@
       <div class="half">
         <div class="content">
           <p>.half</p>
+        </div>
+      </div>
+    </div>
+    <div class="gridism">
+      <div class="quarter">
+        <div class="content">
+          <p>.quarter</p>
+        </div>
+      </div>
+      <div class="quarter">
+        <div class="content">
+          <p>.quarter</p>
+        </div>
+      </div>
+      <div class="half">
+        <div class="content">
+          <p>.half</p>
+        </div>
+      </div>
+    </div>
+    <div class="gridism">
+      <div class="three-quarters">
+        <div class="content">
+          <p>.three-quarters</p>
+        </div>
+      </div>
+      <div class="quarter">
+        <div class="content">
+          <p>.quarter</p>
         </div>
       </div>
     </div>
@@ -182,6 +237,48 @@
       <div class="fifth">
         <div class="content">
           <p>.fifth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage">
+    <div class="gridism">
+      <div class="whole">
+        <div class="content">
+          <h3>Usage</h3>
+          <p>Include the following css in your page:</p>
+          <code>
+            &lt;link rel="stylesheet" href="css/gridism.css"&gt;<br />
+            &lt;link rel="stylesheet" href="css/gridism-responsive.css"&gt;
+          </code>
+          <p>The responsive stylesheet is completely optional.</p>
+          <h4>The Grid(ism) class</h4>
+          <ul>
+            <li>Anything with a class <code>gridism</code> will be a centered, horizontal section of the page, within which any of the grid classes can be laid out.</li>
+            <li>You may wish to use multiple <code>gridism</code> classes throughout your page, with each one inside it’s own full-width section of the page. Use your web-inspector on this page to see how this is done.</li>
+          </ul>
+          <h4>Horizontal Sections</h4>
+          <ul>
+            <li>Elements with a class of <code>whole</code> will be full-width.</li>
+            <li>Elements with classes of <code>half</code> or <code>quarter</code> will work together within a row.</li>
+            <li>Elements with classes of <code>quarter</code> or <code>three-quarters</code> will work together within a row.</li>
+            <li>Elements with classes of <code>third</code> or <code>two-thirds</code> will work together within a row.</li>
+            <li>Elements with classes of <code>golden-small</code> or <code>golden-large</code> will work together within a row. The widths of these classes correspond to <a href="http://en.wikipedia.org/wiki/Golden_ratio">the Golden Ratio</a>.</li>
+            <li>Elements with classes of <code>fifth</code> or <code>two-fifths</code>, <code>three-fifths</code>, or <code>four-fifths</code> will work together within a row.</li>
+            <li>It is up to you to make sure each row is filled with enough horizontal sections to make up a complete row. Failure to do so will result in unexpected layouts.</li>
+          </ul>
+          <h4>Gutters, and wrapping</h4>
+          <ul>
+            <li>Gutters are created by using elements with a <code>content</code> class within any horizontal section.</li>
+            <li>By default, the <code>gridism</code> classes are full-width. If you’d like there to be some wrapping at a nice maximum width value on larger screens, simply place the <code>gridism</code> container inside an element with a <code>wrap</code> class. For example, you could add this as a class on the <code>body</code> tag or on any other element.</li>
+          </ul>
+          <h4>Responsiveness</h4>
+          <ul>
+            <li>On smaller devices, the horizontal sections will stop being placed side-by-side with neighboring classes and instead will be stacked vertically at full-width instead.</li>
+            <li>When the <code>wrap</code> class is used, the max-width value for the centered section on larger screens will adjust to make good use of the available screen space.</li>
+            <li>Below a certain threshhold, the wrap will transition to a full-width, fluid layout.</li>
+          </ul>
         </div>
       </div>
     </div>

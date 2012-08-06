@@ -2,6 +2,7 @@
 
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
 }
 
 body > header h1 {
@@ -21,6 +22,19 @@ header p {
 a {
   text-decoration: none;
   color: #09f;
+}
+
+.intro a {
+  font-size: .6em;
+}
+
+.button {
+  color: #fff;
+  background: #08c;
+  display: inline-block;
+  padding: .25em .5em;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
 /* Grid(ism) Demo Stuff */
@@ -66,4 +80,11 @@ a {
   background: linear-gradient(to bottom,  #b7deed 0%,#71ceef 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#71ceef',GradientType=0 );
 
+}
+
+code {
+  background: #fff5b5;
+  border-radius: 3px;
+  display: inline-block;
+  padding: .25em .5em;
 }
