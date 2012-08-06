@@ -1,0 +1,105 @@
+/*
+ * Grid(ism)
+ * A CSS grid experiment by @cobyism
+ * https://github.com/cobyism/gridism
+ */
+
+/*
+ * Gutters!
+ * This ensures the outer margins aren’t half the inner gutters
+ * Adjust these values to be whatever you like
+ */
+.gridism .content { margin: 10px; }
+.gridism > div:first-child .content { margin-left: 20px; }
+.gridism > div:last-child .content { margin-right: 20px; }
+
+/* To wrap, or not to wrap, that is the question. */
+
+.wrap .gridism {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+/* Core classes */
+
+body > header,
+body > section,
+body > footer {
+  /*float: left;*/
+  width: 100%;
+  overflow: hidden;
+}
+
+.gridism {
+  display: block;
+}
+
+.gridism .whole,
+.gridism .half,
+.gridism .third,
+.gridism .two-thirds,
+.gridism .golden-small,
+.gridism .golden-large,
+.gridism .quarter,
+.gridism .three-quarters,
+.gridism .fifth,
+.gridism .two-fifths,
+.gridism .three-fifths,
+.gridism .four-fifths
+{
+  float: left;
+}
+
+.gridism .whole {
+  width: 100%;
+}
+
+.gridism .half {
+  width: 50%;
+}
+
+.gridism .third {
+  width: 33.3333%;
+}
+
+.gridism .two-thirds {
+  width: 66.6666%;
+}
+
+.gridism .golden-small {
+  width: 38.2716%;
+}
+
+.gridism .golden-large {
+  width: 61.7283%
+}
+
+.gridism .quarter {
+  width: 25%;
+}
+
+.gridism .three-quarters {
+  width: 75%;
+}
+
+.gridism .fifth {
+  width: 20%;
+}
+
+.gridism .two-fifths {
+  width: 40%;
+}
+
+.gridism .three-fifths {
+  width: 60%;
+}
+
+.gridism .four-fifths {
+  width: 80%;
+}
+
+/* Utilities */
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
