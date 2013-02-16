@@ -4,18 +4,33 @@
  * https://github.com/cobyism/gridism
  */
 
+.g, .u {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /*
  * Gutters!
- * This ensures the outer margins aren’t half the inner gutters
- * Adjust these values to be whatever you like
+ * This ensures each outer margin is equal to the inner gutters.
+ * Adjust these values to be whatever you like.
  */
-.gridism .content { margin: 10px; }
-.gridism > div:first-child .content { margin-left: 20px; }
-.gridism > div:last-child .content { margin-right: 20px; }
+.g > .pad-h {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.g > .pad-h:first-child { padding-left: 20px; }
+.g > .pad-h:last-child { padding-right: 20px; }
+
+/* Vertical padding */
+.g .pad-v {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 /* To wrap, or not to wrap, that is the question. */
 
-.wrap .gridism {
+.wrap .g {
   max-width: 978px;
   margin: 0 auto;
 }
@@ -25,81 +40,35 @@
 body > header,
 body > section,
 body > footer {
-  /*float: left;*/
-  width: 100%;
-  overflow: hidden;
-}
-
-.gridism {
   display: block;
-}
-
-.gridism .whole,
-.gridism .half,
-.gridism .third,
-.gridism .two-thirds,
-.gridism .golden-small,
-.gridism .golden-large,
-.gridism .quarter,
-.gridism .three-quarters,
-.gridism .fifth,
-.gridism .two-fifths,
-.gridism .three-fifths,
-.gridism .four-fifths
-{
+  width: 100%;
+  clear: both;
   float: left;
 }
 
-.gridism .whole {
-  width: 100%;
+.g {
+  display: block;
+  clear: both;
+}
+.g .u {
+  float: left;
 }
 
-.gridism .half {
-  width: 50%;
-}
-
-.gridism .third {
-  width: 33.3333%;
-}
-
-.gridism .two-thirds {
-  width: 66.6666%;
-}
-
-.gridism .golden-small {
-  width: 38.2716%;
-}
-
-.gridism .golden-large {
-  width: 61.7283%
-}
-
-.gridism .quarter {
-  width: 25%;
-}
-
-.gridism .three-quarters {
-  width: 75%;
-}
-
-.gridism .fifth {
-  width: 20%;
-}
-
-.gridism .two-fifths {
-  width: 40%;
-}
-
-.gridism .three-fifths {
-  width: 60%;
-}
-
-.gridism .four-fifths {
-  width: 80%;
-}
+.g .w-1-1 { width: 100%; }
+.g .w-1-2 { width: 50%; }
+.g .w-1-3 { width: 33.3332%; }
+.g .w-2-3 { width: 66.6665%; }
+.g .w-g-s { width: 38.2716%; }
+.g .w-g-l { width: 61.7283%; }
+.g .w-1-4 { width: 25%; }
+.g .w-3-4 { width: 75%; }
+.g .w-1-5 { width: 20%; }
+.g .w-2-5 { width: 40%; }
+.g .w-3-5 { width: 60%; }
+.g .w-4-5 { width: 80%; }
 
 /* Utilities */
 
-.center { text-align: center; }
-.left { text-align: left; }
-.right { text-align: right; }
+.align-center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }

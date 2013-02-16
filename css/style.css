@@ -42,22 +42,19 @@ a {
 .demo {
   background: #444;
   box-shadow: inset 0 3px 10px rgba(0,0,0,.5);
-  padding: 0 0 20px;
+  padding-bottom: 10px;
 }
 
-.gridism .content {
-  padding: 0 .5em;
+.demo h3 {
+  margin: 0 0 10px;
 }
 
-.demo .gridism .content {
+.demo .g span {
   text-align: center;
   background: #fc0;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
-
-.demo p {
-  padding: 5px 0;
+  display: block;
   margin: 0;
 }
 
