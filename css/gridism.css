@@ -28,10 +28,10 @@
 }
 
 /* Nested grids already have padding though, so let’s nuke it */
-.g .u .pad-h:first-child { padding-left: 0px; }
-.g .u .pad-h:last-child { padding-right: 0px; }
-.g .g:first-child .pad-v { padding-top: 0px; }
-.g .g:last-child .pad-v { padding-bottom: 0px; }
+.u .pad-h:first-child { padding-left: 0px; }
+.u .pad-h:last-child { padding-right: 0px; }
+.pad-v .g:first-child .pad-v { padding-top: 0; }
+.pad-v .g:last-child .pad-v { padding-bottom: 0; }
 
 /* Wrapping at a maximum width is optional */
 .wrap .g {

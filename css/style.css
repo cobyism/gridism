@@ -81,6 +81,11 @@ a {
   transition: max-width .25s ease-in-out;
 }
 
+.u .g {
+  overflow: hidden;
+  background: rgba(255,204,0,.4);
+}
+
 .demo header h3 {
   text-align: center;
   margin-top: 0;
