@@ -12,20 +12,26 @@
 }
 
 /* Horizontal padding (gutters!) */
-.g > .pad-h {
+.g .pad-h {
   padding-left: 10px;
   padding-right: 10px;
 }
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
-.g > .pad-h:first-child { padding-left: 20px; }
-.g > .pad-h:last-child { padding-right: 20px; }
+.g .pad-h:first-child { padding-left: 20px; }
+.g .pad-h:last-child { padding-right: 20px; }
 
 /* Vertical padding isn’t quite as complicated */
 .g .pad-v {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+/* Nested grids already have padding though, so let’s nuke it */
+.g .u .pad-h:first-child { padding-left: 0px; }
+.g .u .pad-h:last-child { padding-right: 0px; }
+.g .g:first-child .pad-v { padding-top: 0px; }
+.g .g:last-child .pad-v { padding-bottom: 0px; }
 
 /* Wrapping at a maximum width is optional */
 .wrap .g {

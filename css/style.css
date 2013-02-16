@@ -59,6 +59,12 @@ a {
   margin: 0 0 10px;
 }
 
+.demo .g p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
 .demo .g span {
   text-align: center;
   background: #fc0;
