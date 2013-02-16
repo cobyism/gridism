@@ -15,61 +15,12 @@ body > footer {
   float: left;
 }
 
-body > header h1 {
-  margin-bottom: 0;
-  font-size: 3em;
-}
-
-header p {
-  margin-top: 0;
-}
-
-.intro {
-  font-size: 2em;
-  font-weight: 200;
-}
-
-a {
-  text-decoration: none;
-  color: #09f;
-}
-
-.intro a {
-  font-size: .6em;
-}
-
-.button {
-  color: #fff;
-  background: #08c;
-  display: inline-block;
-  padding: .25em .5em;
-  border-radius: 5px;
-  font-weight: 700;
-}
-
-/* Grid(ism) Demo Stuff */
-
-.demo {
-  background: #444;
-  box-shadow: inset 0 3px 10px rgba(0,0,0,.5);
-  padding-bottom: 10px;
-}
-
-.demo h3 {
-  margin: 0 0 10px;
-}
-
-.demo .g p {
-  color: #fff;
-  text-align: center;
-  margin: 0;
-}
+/* Styles to help demonstrate the grid */
 
 .demo .g span {
   text-align: center;
   background: #fc0;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.5);
   display: block;
   margin: 0;
   padding: 20px 0;
@@ -84,32 +35,4 @@ a {
 .u .g {
   overflow: hidden;
   background: rgba(255,204,0,.4);
-}
-
-.demo header h3 {
-  text-align: center;
-  margin-top: 0;
-  border: 1px solid #047;
-  border-left: none;
-  border-right: none;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 3px rgba(0,0,0,.9);
-  text-shadow: 0 1px 0 rgba(255,255,255,.3);
-  padding: 10px 0;
-  background: #b7deed;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I3ZGVlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MWNlZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top,  #b7deed 0%, #71ceef 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b7deed), color-stop(100%,#71ceef));
-  background: -webkit-linear-gradient(top,  #b7deed 0%,#71ceef 100%);
-  background: -o-linear-gradient(top,  #b7deed 0%,#71ceef 100%);
-  background: -ms-linear-gradient(top,  #b7deed 0%,#71ceef 100%);
-  background: linear-gradient(to bottom,  #b7deed 0%,#71ceef 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#71ceef',GradientType=0 );
-
-}
-
-code {
-  background: #fff5b5;
-  border-radius: 3px;
-  display: inline-block;
-  padding: .25em .5em;
 }
