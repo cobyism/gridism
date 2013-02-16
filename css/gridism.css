@@ -85,6 +85,10 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .u .g .pad-h {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
   /* Sometimes, you want things centered on small screens */
   .center-on-mobiles {
