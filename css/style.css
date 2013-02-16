@@ -1,8 +1,18 @@
 /* General */
 
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
+}
+
+/* I use full-width horizontal sections a lot */
+body > header,
+body > section,
+body > footer {
+  display: block;
+  width: 100%;
+  clear: both;
+  float: left;
 }
 
 body > header h1 {
@@ -56,6 +66,13 @@ a {
   box-shadow: 0 1px 3px rgba(0,0,0,.5);
   display: block;
   margin: 0;
+  padding: 20px 0;
+}
+
+.g {
+  -webkit-transition: max-width .25s ease-in-out;
+  -moz-transition: max-width .25s ease-in-out;
+  transition: max-width .25s ease-in-out;
 }
 
 .demo header h3 {
