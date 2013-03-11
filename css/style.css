@@ -1,8 +1,10 @@
 /* General */
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
+  background: #FBF6F4;
+  text-shadow: 0 1px 0 #fff;
 }
 
 /* I use full-width horizontal sections a lot */
@@ -15,9 +17,79 @@ body > footer {
   float: left;
 }
 
+h1, h2, h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+a {
+  color: #c00;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+header, section {
+  border-bottom: 1px solid #eee;
+}
+
+header, section, footer {
+  border-top: 1px solid #fff;
+}
+
+section {
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 4em;
+  letter-spacing: -.05em;
+}
+
+header h1 a {
+  color: #333;
+  border-bottom: none;
+}
+
+header p {
+  font-size: 1.5em;
+  margin: 2em 0;
+}
+
+header p a {
+  font-size: .75em;
+}
+
+.button {
+  border-radius: 5px;
+  background: #efefef;
+  background-image: -moz-linear-gradient(#FCFCFC, #EFEFEF);
+  background-image: -webkit-linear-gradient(#FCFCFC, #EFEFEF);
+  background-image: -ms-linear-gradient(#FCFCFC, #EFEFEF);
+  background-image: linear-gradient(#FCFCFC, #EFEFEF);
+  border: 1px solid #DDDDDD;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+  padding: 8px 16px;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+.button:hover, .button:focus {
+  outline: none;
+  border: 1px solid rgba(255,0,0,.5);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 0 10px rgba(255,0,0,.3);
+}
+
 /* Styles to help demonstrate the grid */
 
-.demo .g span {
+.demo .grid span {
   text-align: center;
   background: #fc0;
   border-radius: 3px;
@@ -26,13 +98,13 @@ body > footer {
   padding: 20px 0;
 }
 
-.g {
+.grid {
   -webkit-transition: max-width .25s ease-in-out;
   -moz-transition: max-width .25s ease-in-out;
   transition: max-width .25s ease-in-out;
 }
 
-.u .g {
+.unit .grid {
   overflow: hidden;
   background: rgba(255,204,0,.4);
 }

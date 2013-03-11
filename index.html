@@ -2,121 +2,42 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>grid(ism)</title>
+  <title>gridism • a simple responsive grid</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/gridism.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="wrap">
   <header>
-    <div class="g">
-      <div class="u w-1-1 align-center">
-        <h1><a href="http://cobyism.com/gridism">grid(ism)</a></h1>
-        <p>An experiment in responsive CSS grids.</p>
+    <div class="grid">
+      <div class="unit whole pad-h center-on-mobiles">
+        <h1><a href="http://cobyism.com/gridism">gridism.</a></h1>
+        <p>A simple responsive CSS&nbsp;grid.</p>
+        <p>
+          <a href="#" class="button">View on GitHub</a>
+          <a href="#" class="button">Download</a>
+        </p>
       </div>
     </div>
   </header>
 
-  <section class="demo">
-    <header class="align-center">
-      <h3>Example Grid</h3>
-    </header>
-    <div class="g">
-      <div class="u w-1-1 pad-h pad-v">
-        <span>.w-1-1</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-2 pad-h pad-v">
-        <span>.w-1-2</span>
-      </div>
-      <div class="u w-1-2 pad-h pad-v">
-        <span>.w-1-2</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-3 pad-h pad-v">
-        <span>.w-1-3</span>
-      </div>
-      <div class="u w-2-3 pad-h pad-v">
-        <span>.w-2-3</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-4 pad-h pad-v">
-        <span>.w-1-4</span>
-      </div>
-      <div class="u w-3-4 pad-h pad-v">
-        <span>.w-3-4</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-5 pad-h pad-v">
-        <span>.w-1-5</span>
-      </div>
-      <div class="u w-4-5 pad-h pad-v">
-        <span>.w-4-5</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-2-5 pad-h pad-v">
-        <span>.w-2-5</span>
-      </div>
-      <div class="u w-3-5 pad-h pad-v">
-        <span>.w-3-5</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="demo nested-grid">
-    <header class="align-center">
-      <h3>Nested Grids work too</h3>
-    </header>
-    <div class="g">
-      <div class="u w-1-3 pad-h pad-v">
-        <span>.w-1-3</span>
-      </div>
-      <div class="u w-2-3 pad-h pad-v">
-        <div class="g">
-          <div class="u w-1-1 pad-h pad-v">
-            <span>Nested grid</span>
-          </div>
-        </div>
-        <div class="g">
-          <div class="u w-1-5 pad-h pad-v">
-            <span>.w-1-3</span>
-          </div>
-          <div class="u w-3-5 pad-h pad-v">
-            <div class="g">
-              <div class="u w-1-1 pad-h pad-v">
-                <span>Nested grid</span>
-              </div>
-            </div>
-            <div class="g">
-              <div class="u w-1-3 pad-h pad-v">
-                <span>.w-1-3</span>
-              </div>
-              <div class="u w-2-3 pad-h pad-v">
-                <span>.w-2-3</span>
-              </div>
-            </div>
-          </div>
-          <div class="u w-1-5 pad-h pad-v">
-            <span>.w-1-3</span>
-          </div>
-        </div>
+  <section class="instructions">
+    <div class="grid">
+      <div class="unit whole pad-h">
+        <h2>Usage</h2>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="g">
-      <div class="u w-1-2 pad-h pad-v">
+    <div class="grid">
+      <div class="unit half pad-h pad-v">
         <div class="center-on-mobiles">
           <p>© Coby Chapple — All rights reserved.</p>
         </div>
       </div>
-      <div class="u w-1-2 pad-h pad-v">
+      <div class="unit half pad-h pad-v">
         <div class="align-right center-on-mobiles">
           <p>This project is <a href="https://github.com/cobyism/gridism">open-source</a> and accepting pull requests. Fork at will.</p>
         </div>
