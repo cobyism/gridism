@@ -1,3 +1,9 @@
+/*
+ * Gridism demonstration page
+ * These styles are all just for the Gridism demo page.
+ * You don’t need this styleshee in your project.
+ */
+
 /* General */
 
 body {
@@ -20,7 +26,11 @@ body > footer {
 h1, h2, h3 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  letter-spacing: -.05em;
+}
+
+h1 {
+  font-size: 4em;
 }
 
 h2 {
@@ -55,7 +65,6 @@ section {
 
 header h1 {
   font-size: 4em;
-  letter-spacing: -.05em;
 }
 
 header h1 a {
@@ -64,7 +73,6 @@ header h1 a {
 }
 
 header p {
-  font-size: 1.5em;
   margin: 2em 0;
 }
 
@@ -74,7 +82,20 @@ header p .button {
 
 p, pre {
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 1.8em;
+}
+
+.lead {
+  font-size: 1.5em;
+}
+
+.buttona {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: #333;
+  border-bottom: 1px solid #c00;
+  margin-right: 10px;
 }
 
 .button {
@@ -110,11 +131,14 @@ footer p {
 
 code, pre {
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
-  background: #555;
-  color: #fff;
+  background: #F1E3D5;
+  color: #333;
   padding: 3px;
   border-radius: 5px;
-  text-shadow: 0 -1px 0 #000;
+}
+
+pre {
+  padding: 10px;
 }
 
 .demo p {
@@ -144,7 +168,7 @@ code, pre {
   transition: max-width .25s ease-in-out;
 }
 
-.unit .grid {
+.demo .unit .grid {
   overflow: hidden;
   background: rgba(255,204,0,.4);
 }

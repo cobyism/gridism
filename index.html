@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>gridism • a simple responsive grid</title>
+  <title>Gridism • a simple responsive CSS grid by @cobyism</title>
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/gridism.css">
@@ -14,10 +14,10 @@
     <div class="grid">
       <div class="unit whole center-on-mobiles">
         <h1><a href="http://cobyism.com/gridism">gridism.</a></h1>
-        <p>A simple, responsive, and handy CSS&nbsp;grid by <a href="https://twitter.com/cobyism">@cobyism</a>.</p>
+        <p class="lead">A simple responsive CSS&nbsp;grid by&nbsp;<a href="https://twitter.com/cobyism">@cobyism</a>.</p>
         <p>
           <a href="https://github.com/cobyism/gridism" class="button">View on GitHub</a>
-          <a href="https://github.com/cobyism/gridism/archive/gh-pages.zip" class="button">Download</a>
+          <a href="https://github.com/cobyism/gridism/archive/gh-pages.zip" class="button hide-on-mobiles">Download</a>
         </p>
       </div>
     </div>
@@ -42,11 +42,11 @@
         </p>
       </div>
       <div class="unit one-third">
-        <h2>Handy</h2>
+        <h2>Easy</h2>
         <p>
           All units have even inner and outer gutters.
           You can turn gutters off with <code>.no-gutters</code>.
-          There are also <a href="https://github.com/cobyism/gridism/blob/gh-pages/css/gridism.css#L100">a few</a> of other commonly needed&nbsp;classes.
+          There are also <a href="https://github.com/cobyism/gridism/blob/gh-pages/css/gridism.css">a few other</a> commonly needed&nbsp;classes.
         </p>
       </div>
     </div>
@@ -166,34 +166,40 @@
     </div>
   </section>
 
-  <section class="installation">
+  <section class="usage">
     <div class="grid">
       <div class="unit whole">
-        <h2>Installation</h2>
-        <p>There are three ways you can have <strong>gridism</strong> be part of your project.</p>
+        <h2>Download</h2>
+        <p class="lead">You have two main options for using Gridism in your project.</p>
       </div>
     </div>
     <div class="grid">
       <div class="unit one-third">
-        <h3>Bower</h3>
+        <h3>A. Bower</h3>
         <p>Gridism can be installed using the <a href="http://twitter.github.com/bower">Bower</a> package manager.</p>
         <pre><code>bower install gridism</code></pre>
       </div>
       <div class="unit one-third">
-        <h3>Download</h3>
-        <p><a href="https://github.com/cobyism/gridism/archive/gh-pages.zip">Get the source code</a>, extract it, and copy <code>css/gridism.css</code> into your project’s directory.</p>
+        <h3>B. Manual</h3>
+        <p><a href="https://github.com/cobyism/gridism/archive/gh-pages.zip">Download the ZIP</a>, extract the source code, and copy <code>gridism.css</code> into your project’s directory.</p>
       </div>
       <div class="unit one-third">
-        <h3>GitHub</h3>
-        <p>Clone <a href="https://github.com/cobyism/gridism">the repository</a> using your terminal, or even add it as a <a href="http://git-scm.com/book/en/Git-Tools-Submodules">submodule</a> of your project.</p>
+        <h3>Other methods</h3>
+        <p>Of course, you could also clone <a href="https://github.com/cobyism/gridism">the repository</a> using your terminal, or even add it as a <a href="http://git-scm.com/book/en/Git-Tools-Submodules">submodule</a> of your project.</p>
       </div>
     </div>
     <div class="grid">
       <div class="unit whole">
-        <h3>Linking the stylesheet</h3>
-        <p>Once you’ve acquired the gridism source code, add the following stylesheet to the <code>&lt;head&gt;</code> section of your project’s HTML.</p>
+        <h2>Installation</h2>
+        <p class="lead">
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit half">
+        <p>Once you’ve acquired the Gridism source code, add the following stylesheet to the <code>&lt;head&gt;</code> section of your project’s HTML. If you didn’t use Bower, you may need to adjust the path to the CSS file to match your file structure.</p>
+      </div>
+      <div class="unit half">
         <pre><code>&lt;link rel="stylesheet" href="components/gridism/gridism.css"&gt;</code></pre>
-        <p>If you didn’t use Bower, you may need to adjust the path to the CSS file to match your file structure</p>
       </div>
     </div>
   </section>

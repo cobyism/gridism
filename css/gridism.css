@@ -87,7 +87,7 @@
     text-align: center !important;
   }
   .hide-on-mobiles {
-    display: none;
+    display: none !important;
   }
 }
 
