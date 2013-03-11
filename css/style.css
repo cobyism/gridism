@@ -59,12 +59,8 @@ header, section, footer {
   border-top: 1px solid #fff;
 }
 
-section {
+section, footer {
   padding: 30px 0;
-}
-
-header h1 {
-  font-size: 4em;
 }
 
 header h1 a {
@@ -76,26 +72,13 @@ header p {
   margin: 2em 0;
 }
 
-header p .button {
-  font-size: .75em;
+.lead {
+  font-size: 1.5em;
 }
 
 p, pre {
   font-size: 1.2em;
   line-height: 1.8em;
-}
-
-.lead {
-  font-size: 1.5em;
-}
-
-.buttona {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  color: #333;
-  border-bottom: 1px solid #c00;
-  margin-right: 10px;
 }
 
 .button {
@@ -139,18 +122,14 @@ code, pre {
 
 pre {
   padding: 10px;
+  text-align: center;
 }
 
 .demo p {
-  text-align: center;
-  font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
   margin: 0;
 }
 
-.demo .unit p {
-  background: rgba(255,180,0,.5);
-  border-radius: 3px;
-  display: block;
+.demo .unit pre {
   margin: 0;
   padding: 20px 0;
   -webkit-transition: all .2s ease-in-out;
@@ -158,17 +137,18 @@ pre {
   transition: all .2s ease-in-out;
 }
 
-.demo .unit p:hover {
+.demo .unit pre:hover {
   background: #fc0;
 }
 
-.grid {
-  -webkit-transition: max-width .25s ease-in-out;
-  -moz-transition: max-width .25s ease-in-out;
-  transition: max-width .25s ease-in-out;
+.grid, .unit {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .demo .unit .grid {
   overflow: hidden;
-  background: rgba(255,204,0,.4);
+  background: rgba(241,227,213,.4);
 }
+
