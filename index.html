@@ -2,123 +2,226 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>grid(ism)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gridism • a simple responsive CSS grid by @cobyism</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="gridism.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/gridism.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="wrap">
+
   <header>
-    <div class="g">
-      <div class="u w-1-1 align-center">
-        <h1><a href="http://cobyism.com/gridism">grid(ism)</a></h1>
-        <p>An experiment in responsive CSS grids.</p>
+    <div class="grid">
+      <div class="unit whole center-on-mobiles">
+        <h1><a href="http://cobyism.com/gridism">gridism.</a></h1>
+        <p class="lead">A simple responsive CSS&nbsp;grid by&nbsp;<a href="http://cobyism.com">@cobyism</a>.</p>
+        <p>
+          <a href="https://github.com/cobyism/gridism" class="button">View on GitHub</a>
+          <a href="https://github.com/cobyism/gridism/archive/gh-pages.zip" class="button hide-on-mobiles">Download</a>
+        </p>
       </div>
     </div>
   </header>
 
-  <section class="demo">
-    <header class="align-center">
-      <h3>Example Grid</h3>
-    </header>
-    <div class="g">
-      <div class="u w-1-1 pad-h pad-v">
-        <span>.w-1-1</span>
+  <section class="instructions">
+    <div class="grid">
+      <div class="unit one-third">
+        <h2>Simple</h2>
+        <p>
+          Each<code>.grid</code> element is a horizontal row which can contain
+          <code>.unit</code> elements of various widths.
+          Width combinations are illustrated&nbsp;below.
+        </p>
       </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-2 pad-h pad-v">
-        <span>.w-1-2</span>
+      <div class="unit one-third">
+        <h2>Responsive</h2>
+        <p>
+          Units get stacked on screens 568px or smaller.
+          Grids in a <code>.wrap</code> have maximum widths of 978px, or 1140px
+          when there’s lots&nbsp;of&nbsp;room.
+        </p>
       </div>
-      <div class="u w-1-2 pad-h pad-v">
-        <span>.w-1-2</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-3 pad-h pad-v">
-        <span>.w-1-3</span>
-      </div>
-      <div class="u w-2-3 pad-h pad-v">
-        <span>.w-2-3</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-4 pad-h pad-v">
-        <span>.w-1-4</span>
-      </div>
-      <div class="u w-3-4 pad-h pad-v">
-        <span>.w-3-4</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-1-5 pad-h pad-v">
-        <span>.w-1-5</span>
-      </div>
-      <div class="u w-4-5 pad-h pad-v">
-        <span>.w-4-5</span>
-      </div>
-    </div>
-    <div class="g">
-      <div class="u w-2-5 pad-h pad-v">
-        <span>.w-2-5</span>
-      </div>
-      <div class="u w-3-5 pad-h pad-v">
-        <span>.w-3-5</span>
+      <div class="unit one-third">
+        <h2>Easy</h2>
+        <p>
+          All units have even inner and outer gutters.
+          You can turn gutters off with <code>.no-gutters</code>.
+          There are also <a href="https://github.com/cobyism/gridism/blob/gh-pages/css/gridism.css">a few other</a> commonly needed&nbsp;classes.
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="demo nested-grid">
-    <header class="align-center">
-      <h3>Nested Grids work too</h3>
-    </header>
-    <div class="g">
-      <div class="u w-1-3 pad-h pad-v">
-        <span>.w-1-3</span>
+  <section class="demo">
+    <div class="grid">
+      <div class="unit whole">
+        <pre>.whole</pre>
       </div>
-      <div class="u w-2-3 pad-h pad-v">
-        <div class="g">
-          <div class="u w-1-1 pad-h pad-v">
-            <span>Nested grid</span>
+    </div>
+    <div class="grid">
+      <div class="unit half">
+        <pre>.half</pre>
+      </div>
+      <div class="unit half">
+        <pre>.half</pre>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit one-third">
+        <pre>.one-third</pre>
+      </div>
+      <div class="unit two-thirds">
+        <pre>.two-thirds</pre>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit one-quarter">
+        <pre>.one-quarter</pre>
+      </div>
+      <div class="unit three-quarters">
+        <pre>.three-quarters</pre>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit one-fifth">
+        <pre>.one-fifth</pre>
+      </div>
+      <div class="unit four-fifths">
+        <pre>.four-fifths</pre>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit two-fifths">
+        <pre>.two-fifths</pre>
+      </div>
+      <div class="unit three-fifths">
+        <pre>.three-fifths</pre>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit golden-large">
+        <pre>.golden-large</pre>
+      </div>
+      <div class="unit golden-small">
+        <pre>.golden-small</pre>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit one-quarter">
+        <h2>Nested grids</h2>
+        <p>Nested grids also work, but the markup gets gnarly pretty&nbsp;quickly.</p>
+      </div>
+      <div class="unit three-quarters">
+        <div class="grid">
+          <div class="unit whole">
+            <p class="align-center">Gridception!</p>
           </div>
         </div>
-        <div class="g">
-          <div class="u w-1-5 pad-h pad-v">
-            <span>.w-1-3</span>
+        <div class="grid">
+          <div class="unit one-third">
+            <pre>★</pre>
           </div>
-          <div class="u w-3-5 pad-h pad-v">
-            <div class="g">
-              <div class="u w-1-1 pad-h pad-v">
-                <span>Nested grid</span>
+          <div class="unit two-thirds">
+            <div class="grid">
+              <div class="unit whole">
+                <p class="align-center">Gridception!</p>
               </div>
             </div>
-            <div class="g">
-              <div class="u w-1-3 pad-h pad-v">
-                <span>.w-1-3</span>
+            <div class="grid">
+              <div class="unit two-fifths">
+                <pre>★</pre>
               </div>
-              <div class="u w-2-3 pad-h pad-v">
-                <span>.w-2-3</span>
+              <div class="unit three-fifths">
+                <pre>★</pre>
               </div>
             </div>
-          </div>
-          <div class="u w-1-5 pad-h pad-v">
-            <span>.w-1-3</span>
           </div>
         </div>
+        <div class="grid">
+          <div class="unit four-fifths">
+            <div class="grid">
+              <div class="unit whole">
+                <p class="align-center">Gridception!</p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="unit one-quarter">
+                <pre>★</pre>
+              </div>
+              <div class="unit one-quarter">
+                <pre>★</pre>
+              </div>
+              <div class="unit one-quarter">
+                <pre>★</pre>
+              </div>
+              <div class="unit one-quarter">
+                <pre>★</pre>
+              </div>
+            </div>
+          </div>
+          <div class="unit one-fifth">
+            <pre>★</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage">
+    <div class="grid">
+      <div class="unit whole">
+        <h2>Download</h2>
+        <p class="lead">You have two main options for using Gridism in your&nbsp;project.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit one-third">
+        <h3>A. Bower</h3>
+        <p>Gridism can be installed using the <a href="http://twitter.github.com/bower">Bower</a> package&nbsp;manager.</p>
+        <pre><code>bower install gridism</code></pre>
+      </div>
+      <div class="unit one-third">
+        <h3>B. Manual</h3>
+        <p><a href="https://github.com/cobyism/gridism/archive/gh-pages.zip">Download the ZIP</a>, extract the source code, and copy <code>gridism.css</code> into your project’s&nbsp;directory.</p>
+      </div>
+      <div class="unit one-third">
+        <h3>Elsewise</h3>
+        <p>Of course, you could also clone <a href="https://github.com/cobyism/gridism">the repository</a> using your terminal, or even add it as a <a href="http://git-scm.com/book/en/Git-Tools-Submodules">submodule</a> of your&nbsp;project.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit whole">
+        <h2>Installation</h2>
+        <p class="lead">Once you’ve acquired the Gridism source code, there’s a couple of other things you’ll&nbsp;probably want&nbsp;to&nbsp;do.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit whole">
+        <h3>1. Stylesheet</h3>
+        <p>Add the following stylesheet to the <code>&lt;head&gt;</code> section of your project’s HTML. If you didn’t use Bower, you may need to adjust the path to the CSS file to match your file&nbsp;structure.</p>
+        <pre><code>&lt;link rel="stylesheet" href="components/gridism/gridism.css"&gt;</code></pre>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit whole">
+        <h3>2. Viewport</h3>
+        <p>Set the scale of your viewport to the width of the device. Placing the following tag in the <code>&lt;head&gt;</code> of your HTML ensures the viewport doesn’t load zoomed-out on mobiles and&nbsp;tablets.</p>
+        <pre><code>&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;</code></pre>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="g">
-      <div class="u w-1-2 pad-h pad-v">
+    <div class="grid">
+      <div class="unit half">
         <div class="center-on-mobiles">
           <p>© Coby Chapple — All rights reserved.</p>
         </div>
       </div>
-      <div class="u w-1-2 pad-h pad-v">
+      <div class="unit half">
         <div class="align-right center-on-mobiles">
-          <p>This project is <a href="https://github.com/cobyism/gridism">open-source</a> and accepting pull requests. Fork at will.</p>
+          <p>This project is <a href="https://github.com/cobyism/gridism">open-source</a> and accepting pull&nbsp;requests. Fork&nbsp;at&nbsp;will.</p>
         </div>
       </div>
     </div>
