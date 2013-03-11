@@ -11,7 +11,7 @@
 <body class="wrap">
   <header>
     <div class="grid">
-      <div class="unit whole pad-h center-on-mobiles">
+      <div class="unit whole center-on-mobiles">
         <h1><a href="http://cobyism.com/gridism">gridism.</a></h1>
         <p>A simple, responsive, and handy CSS&nbsp;grid.</p>
         <p>
@@ -24,7 +24,7 @@
 
   <section class="instructions">
     <div class="grid">
-      <div class="unit one-third pad-h">
+      <div class="unit one-third">
         <h2>Simple</h2>
         <p>
           Each<code>.grid</code> element is a horizontal row which can contain
@@ -32,7 +32,7 @@
           Width combinations are illustrated&nbsp;below.
         </p>
       </div>
-      <div class="unit one-third pad-h">
+      <div class="unit one-third">
         <h2>Responsive</h2>
         <p>
           Units get stacked on screens 568px or smaller.
@@ -40,89 +40,101 @@
           when there’s lots&nbsp;of&nbsp;room.
         </p>
       </div>
-      <div class="unit one-third pad-h">
+      <div class="unit one-third">
         <h2>Handy</h2>
         <p>
-          When units are given <code>.pad-h</code> (horizontal) and
-          <code>.pad-v</code> (vertical) classes, content gets even padding and gutters.
+          All units have even inner and outer gutters.
+          You can turn gutters off with <code>.no-gutters</code>.
           There are also a range of text-alignment&nbsp;classes.
         </p>
       </div>
     </div>
     <div class="grid demo">
-      <div class="unit whole pad-h pad-v">
+      <div class="unit whole">
         <p>.whole</p>
       </div>
     </div>
     <div class="grid demo">
-      <div class="unit half pad-h pad-v">
+      <div class="unit half">
         <p>.half</p>
       </div>
-      <div class="unit half pad-h pad-v">
+      <div class="unit half">
         <p>.half</p>
       </div>
     </div>
     <div class="grid demo">
-      <div class="unit one-third pad-h pad-v">
+      <div class="unit one-third">
         <p>.one-third</p>
       </div>
-      <div class="unit two-thirds pad-h pad-v">
+      <div class="unit two-thirds">
         <p>.two-thirds</p>
       </div>
     </div>
     <div class="grid demo">
-      <div class="unit one-quarter pad-h pad-v">
+      <div class="unit one-quarter">
         <p>.one-quarter</p>
       </div>
-      <div class="unit three-quarters pad-h pad-v">
+      <div class="unit three-quarters">
         <p>.three-quarters</p>
       </div>
     </div>
     <div class="grid demo">
-      <div class="unit one-fifth pad-h pad-v">
+      <div class="unit one-fifth">
         <p>.one-fifth</p>
       </div>
-      <div class="unit four-fifths pad-h pad-v">
+      <div class="unit four-fifths">
         <p>.four-fifths</p>
       </div>
     </div>
     <div class="grid demo">
-      <div class="unit two-fifths pad-h pad-v">
+      <div class="unit two-fifths">
         <p>.two-fifths</p>
       </div>
-      <div class="unit three-fifths pad-h pad-v">
+      <div class="unit three-fifths">
         <p>.three-fifths</p>
       </div>
     </div>
     <div class="grid demo">
-      <div class="unit golden-large pad-h pad-v">
+      <div class="unit golden-large">
         <p>.golden-large</p>
       </div>
-      <div class="unit golden-small pad-h pad-v">
+      <div class="unit golden-small">
         <p>.golden-small</p>
       </div>
     </div>
     <div class="grid">
-      <div class="unit whole pad-h">
+      <div class="unit whole">
         <h2>Installation</h2>
         <p>There are three ways you can have <strong>gridism</strong> be part of your project.</p>
-        <ul>
-          <li>Install using <a href="http://twitter.github.com/bower/">Bower</a>:<br /><code>bower install gridism</code></li>
-          <li>Download <a href="https://github.com/cobyism/gridism/archive/gh-pages.zip">the zipball</a> from GitHub</li>
-          <li>Clone the repository</li>
-        </ul>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit one-third">
+        <h3>Bower</h3>
+        <p>Gridism can be installed using the <a href="http://twitter.github.com/bower">Bower</a> package manager.</p>
+        <pre><code>bower install gridism</code></pre>
+      </div>
+      <div class="unit one-third">
+        <h3>Download</h3>
+        <p><a href="https://github.com/cobyism/gridism/archive/gh-pages.zip">Get the source code</a>, extract it, and copy <code>css/gridism.css</code> into your project’s directory.</p>
+      </div>
+      <div class="unit one-third">
+        <h3>GitHub</h3>
+        <p>Clone <a href="https://github.com/cobyism/gridism">the repository</a> using your terminal, or via your platform’s client below.</p>
+        <a class="button" href="github-windows://openRepo/https://github.com/cobyism/gridism">Windows</a>
+        <a class="button" href="github-mac://openRepo/https://github.com/cobyism/gridism">Mac</a>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="grid">
-      <div class="unit half pad-h pad-v">
+      <div class="unit half">
         <div class="center-on-mobiles">
           <p>© Coby Chapple — All rights reserved.</p>
         </div>
       </div>
-      <div class="unit half pad-h pad-v">
+      <div class="unit half">
         <div class="align-right center-on-mobiles">
           <p>This project is <a href="https://github.com/cobyism/gridism">open-source</a> and accepting pull requests. Fork at will.</p>
         </div>

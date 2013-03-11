@@ -5,33 +5,22 @@
  */
 
 /* Preserve some sanity */
-.grid, .unit {
+.grid,
+.unit {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Horizontal padding (gutters!) */
-.grid .pad-h {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
-.grid .pad-h:first-child { padding-left: 20px; }
-.grid .pad-h:last-child { padding-right: 20px; }
-
-/* Vertical padding isn’t quite as complicated */
-.grid .pad-v {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+.grid .unit:first-child { padding-left: 20px; }
+.grid .unit:last-child { padding-right: 20px; }
 
 /* Nested grids already have padding though, so let’s nuke it */
-.unit .pad-h:first-child { padding-left: 0px; }
-.unit .pad-h:last-child { padding-right: 0px; }
-.pad-v .grid:first-child .pad-v { padding-top: 0; }
-.pad-v .grid:last-child .pad-v { padding-bottom: 0; }
+.unit .unit:first-child { padding-left: 0; }
+.unit .unit:last-child { padding-right: 0; }
+.unit .grid:first-child .unit { padding-top: 0; }
+.unit .grid:last-child .unit { padding-bottom: 0; }
 
 /* Wrapping at a maximum width is optional */
 .wrap .grid {
@@ -47,6 +36,11 @@
 .grid .unit {
   float: left;
   width: 100%;
+  padding: 10px;
+}
+.no-gutters .unit,
+.unit.no-gutters {
+  padding: 0 !important;
 }
 
 /* Width classes are numbered as fractions
@@ -72,11 +66,11 @@
   }
 
   /* ... and give them some better margins */
-  .grid .pad-h {
+  .grid .unit {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .unit .grid .pad-h {
+  .unit .grid .unit {
     padding-left: 0px;
     padding-right: 0px;
   }
