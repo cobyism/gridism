@@ -39,7 +39,6 @@ h2 {
 
 h3 {
   font-size: 1.4em;
-  margin-top: 0;
 }
 
 a {
@@ -108,6 +107,21 @@ p, pre {
 footer p {
   margin: 0;
   font-size: 1em;
+}
+
+@media (min-width: 960px){
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 2.6em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  .lead {
+    font-size: 1.8em;
+  }
 }
 
 /* Styles to help demonstrate the grid */
