@@ -68,11 +68,11 @@ header p {
   margin: 2em 0;
 }
 
-header p a {
+header p .button {
   font-size: .75em;
 }
 
-p {
+p, pre {
   font-size: 1.2em;
   line-height: 1.5em;
 }
@@ -101,9 +101,14 @@ p {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 0 10px rgba(255,0,0,.3);
 }
 
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
 /* Styles to help demonstrate the grid */
 
-code {
+code, pre {
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
   background: #555;
   color: #fff;

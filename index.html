@@ -9,14 +9,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="wrap">
+
   <header>
     <div class="grid">
       <div class="unit whole center-on-mobiles">
         <h1><a href="http://cobyism.com/gridism">gridism.</a></h1>
-        <p>A simple, responsive, and handy CSS&nbsp;grid.</p>
+        <p>A simple, responsive, and handy CSS&nbsp;grid by <a href="https://twitter.com/cobyism">@cobyism</a>.</p>
         <p>
-          <a href="#" class="button">View on GitHub</a>
-          <a href="#" class="button">Download</a>
+          <a href="https://github.com/cobyism/gridism" class="button">View on GitHub</a>
+          <a href="https://github.com/cobyism/gridism/archive/gh-pages.zip" class="button">Download</a>
         </p>
       </div>
     </div>
@@ -45,16 +46,19 @@
         <p>
           All units have even inner and outer gutters.
           You can turn gutters off with <code>.no-gutters</code>.
-          There are also a range of text-alignment&nbsp;classes.
+          There are also <a href="https://github.com/cobyism/gridism/blob/gh-pages/css/gridism.css#L100">a few</a> of other commonly needed&nbsp;classes.
         </p>
       </div>
     </div>
-    <div class="grid demo">
+  </section>
+
+  <section class="demo">
+    <div class="grid">
       <div class="unit whole">
         <p>.whole</p>
       </div>
     </div>
-    <div class="grid demo">
+    <div class="grid">
       <div class="unit half">
         <p>.half</p>
       </div>
@@ -62,7 +66,7 @@
         <p>.half</p>
       </div>
     </div>
-    <div class="grid demo">
+    <div class="grid">
       <div class="unit one-third">
         <p>.one-third</p>
       </div>
@@ -70,7 +74,7 @@
         <p>.two-thirds</p>
       </div>
     </div>
-    <div class="grid demo">
+    <div class="grid">
       <div class="unit one-quarter">
         <p>.one-quarter</p>
       </div>
@@ -78,7 +82,7 @@
         <p>.three-quarters</p>
       </div>
     </div>
-    <div class="grid demo">
+    <div class="grid">
       <div class="unit one-fifth">
         <p>.one-fifth</p>
       </div>
@@ -86,7 +90,7 @@
         <p>.four-fifths</p>
       </div>
     </div>
-    <div class="grid demo">
+    <div class="grid">
       <div class="unit two-fifths">
         <p>.two-fifths</p>
       </div>
@@ -94,7 +98,7 @@
         <p>.three-fifths</p>
       </div>
     </div>
-    <div class="grid demo">
+    <div class="grid">
       <div class="unit golden-large">
         <p>.golden-large</p>
       </div>
@@ -102,6 +106,67 @@
         <p>.golden-small</p>
       </div>
     </div>
+    <div class="grid">
+      <div class="unit one-quarter">
+        <p>Nested grids also work, but the markup gets gnarly pretty quickly.</p>
+      </div>
+      <div class="unit three-quarters">
+        <div class="grid">
+          <div class="unit whole">
+            <p>Nested grid</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="unit one-third">
+            <p>Gridception</p>
+          </div>
+          <div class="unit two-thirds">
+            <div class="grid">
+              <div class="unit whole">
+                <p>Nested grid</p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="unit two-fifths">
+                <p>Gridception</p>
+              </div>
+              <div class="unit three-fifths">
+                <p>Gridception</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="unit four-fifths">
+            <div class="grid">
+              <div class="unit whole">
+                <p>Nested grid</p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="unit one-quarter">
+                <p>Gridception</p>
+              </div>
+              <div class="unit one-quarter">
+                <p>Gridception</p>
+              </div>
+              <div class="unit one-quarter">
+                <p>Gridception</p>
+              </div>
+              <div class="unit one-quarter">
+                <p>Gridception</p>
+              </div>
+            </div>
+          </div>
+          <div class="unit one-fifth">
+            <p>Gridception</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="installation">
     <div class="grid">
       <div class="unit whole">
         <h2>Installation</h2>
@@ -120,9 +185,15 @@
       </div>
       <div class="unit one-third">
         <h3>GitHub</h3>
-        <p>Clone <a href="https://github.com/cobyism/gridism">the repository</a> using your terminal, or via your platform’s client below.</p>
-        <a class="button" href="github-windows://openRepo/https://github.com/cobyism/gridism">Windows</a>
-        <a class="button" href="github-mac://openRepo/https://github.com/cobyism/gridism">Mac</a>
+        <p>Clone <a href="https://github.com/cobyism/gridism">the repository</a> using your terminal, or even add it as a <a href="http://git-scm.com/book/en/Git-Tools-Submodules">submodule</a> of your project.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="unit whole">
+        <h3>Linking the stylesheet</h3>
+        <p>Once you’ve acquired the gridism source code, add the following stylesheet to the <code>&lt;head&gt;</code> section of your project’s HTML.</p>
+        <pre><code>&lt;link rel="stylesheet" href="components/gridism/gridism.css"&gt;</code></pre>
+        <p>If you didn’t use Bower, you may need to adjust the path to the CSS file to match your file structure</p>
       </div>
     </div>
   </section>
