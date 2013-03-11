@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
   background: #FBF6F4;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
 /* I use full-width horizontal sections a lot */
@@ -63,6 +63,11 @@ header p a {
   font-size: .75em;
 }
 
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
 .button {
   border-radius: 5px;
   background: #efefef;
@@ -89,13 +94,34 @@ header p a {
 
 /* Styles to help demonstrate the grid */
 
-.demo .grid span {
+code {
+  font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+  background: #555;
+  color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+  text-shadow: 0 -1px 0 #000;
+}
+
+.demo p {
   text-align: center;
-  background: #fc0;
+  font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+  margin: 0;
+}
+
+.demo .unit p {
+  background: rgba(255,180,0,.5);
   border-radius: 3px;
   display: block;
   margin: 0;
   padding: 20px 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.demo .unit p:hover {
+  background: #fc0;
 }
 
 .grid {

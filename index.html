@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>gridism • a simple responsive grid</title>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/gridism.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
     <div class="grid">
       <div class="unit whole pad-h center-on-mobiles">
         <h1><a href="http://cobyism.com/gridism">gridism.</a></h1>
-        <p>A simple responsive CSS&nbsp;grid.</p>
+        <p>A simple, responsive, and handy CSS&nbsp;grid.</p>
         <p>
           <a href="#" class="button">View on GitHub</a>
           <a href="#" class="button">Download</a>
@@ -24,8 +24,93 @@
 
   <section class="instructions">
     <div class="grid">
+      <div class="unit one-third pad-h">
+        <h2>Simple</h2>
+        <p>
+          Each<code>.grid</code> element is a horizontal row which can contain
+          <code>.unit</code> elements of various widths.
+          Width combinations are illustrated&nbsp;below.
+        </p>
+      </div>
+      <div class="unit one-third pad-h">
+        <h2>Responsive</h2>
+        <p>
+          Units get stacked on screens 568px or smaller.
+          Grids in a <code>.wrap</code> have maximum widths of 978px, or 1140px
+          when there’s lots&nbsp;of&nbsp;room.
+        </p>
+      </div>
+      <div class="unit one-third pad-h">
+        <h2>Handy</h2>
+        <p>
+          When units are given <code>.pad-h</code> (horizontal) and
+          <code>.pad-v</code> (vertical) classes, content gets even padding and gutters.
+          There are also a range of text-alignment&nbsp;classes.
+        </p>
+      </div>
+    </div>
+    <div class="grid demo">
+      <div class="unit whole pad-h pad-v">
+        <p>.whole</p>
+      </div>
+    </div>
+    <div class="grid demo">
+      <div class="unit half pad-h pad-v">
+        <p>.half</p>
+      </div>
+      <div class="unit half pad-h pad-v">
+        <p>.half</p>
+      </div>
+    </div>
+    <div class="grid demo">
+      <div class="unit one-third pad-h pad-v">
+        <p>.one-third</p>
+      </div>
+      <div class="unit two-thirds pad-h pad-v">
+        <p>.two-thirds</p>
+      </div>
+    </div>
+    <div class="grid demo">
+      <div class="unit one-quarter pad-h pad-v">
+        <p>.one-quarter</p>
+      </div>
+      <div class="unit three-quarters pad-h pad-v">
+        <p>.three-quarters</p>
+      </div>
+    </div>
+    <div class="grid demo">
+      <div class="unit one-fifth pad-h pad-v">
+        <p>.one-fifth</p>
+      </div>
+      <div class="unit four-fifths pad-h pad-v">
+        <p>.four-fifths</p>
+      </div>
+    </div>
+    <div class="grid demo">
+      <div class="unit two-fifths pad-h pad-v">
+        <p>.two-fifths</p>
+      </div>
+      <div class="unit three-fifths pad-h pad-v">
+        <p>.three-fifths</p>
+      </div>
+    </div>
+    <div class="grid demo">
+      <div class="unit golden-large pad-h pad-v">
+        <p>.golden-large</p>
+      </div>
+      <div class="unit golden-small pad-h pad-v">
+        <p>.golden-small</p>
+      </div>
+    </div>
+    <div class="grid">
       <div class="unit whole pad-h">
-        <h2>Usage</h2>
+        <h2>Installation</h2>
+        <p>There are three ways you can have <strong>gridism</strong> be part of your project.</p>
+        <ul>
+          <li>Install using <a href="http://twitter.github.com/bower/">Bower</a>:<br /><code>bower install gridism</code></li>
+          <li>Download <a href="https://github.com/cobyism/gridism/archive/gh-pages.zip">the zipball</a> from GitHub</li>
+          <li>Clone the repository</li>
+        </ul>
       </div>
     </div>
   </section>
