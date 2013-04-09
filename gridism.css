@@ -62,6 +62,19 @@
 .grid .golden-small,   .grid .w-g-s { width: 38.2716%; } /* Golden section: smaller piece */
 .grid .golden-large,   .grid .w-g-l { width: 61.7283%; } /* Golden section: larger piece */
 
+/* Clearfix after every .grid */
+.grid {
+  *zoom: 1;
+}
+.grid:before, .grid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.grid:after {
+  clear: both;
+}
+
 /* Utility classes */
 .align-center { text-align: center; }
 .align-left   { text-align: left; }
