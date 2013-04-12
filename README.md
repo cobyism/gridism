@@ -2,11 +2,25 @@
 
 A simple responsive CSS grid. [View the demo →](http://cobyism.com/gridism/)
 
-## Overview
+## Why?
 
-- **Simple**—Each `.grid` element is a horizontal row which can contain `.unit` elements of various widths. Width combinations are detailed below.
-- **Responsive**—Units get stacked on screens 568px or smaller. Grids in a `.wrap` have maximum widths of 978px, or 1140px when there’s lots of room.
-- **Easy**—All units have even inner and outer gutters. You can turn gutters off with `.no-gutters`. There are also a few other commonly needed classes for things like alignment, floating, and hiding things.
+When I design web layouts, I don’t think in 12 or 16 column grids. Instead, my mental model usually works something like this:
+
+- The page being divided up into multiple vertical sections, and…
+- Each vertical section being divided up into simple combinations of fractions of the section width.
+
+I think to my self:
+
+> Alright, in this section, I want a bit that’s one third of the section’s width, and then next to that I want another bit that’s two thirds of the sections’s width. Now, in the next section…
+
+When I use frameworks with fixed numbers of columns, I have to:
+
+1. Remember how many columns are in the grid for the particular framework I’m using.
+1. Decide how I want to divide up this particular section’s content.
+1. Mentally do the conversion from what I want to see (one quarter + three quarters, for example) into the number of columns I need for the grid I’m using.
+1. Remember the class naming structure for the framework I’m using. Is it `.span3`, `.grid_3`, `.col-3`, or something else altogether?
+
+I feel like only the second step should be necessary. I couldn’t find a framework that matched this mental model of how I work, so I started hacking on Gridism.
 
 ## Installation
 
