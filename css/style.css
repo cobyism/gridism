@@ -163,6 +163,13 @@ pre {
 
 .demo .unit .grid {
   overflow: hidden;
-  background: rgba(241,227,213,.4);
+  background: rgba(241,227,213,.5);
 }
 
+.demo .unit .grid:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.demo .unit .grid:last-child {
+  border-radius: 0 0 5px 5px;
+}
