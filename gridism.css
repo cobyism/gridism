@@ -106,7 +106,7 @@
 
 /* Expand the wrap a bit further on larger screens */
 @media screen and (min-width: 1180px) {
-  .wrap .grid {
+  .wider .grid {
     max-width: 1180px;
     margin: 0 auto;
   }
