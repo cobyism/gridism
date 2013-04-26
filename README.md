@@ -49,7 +49,7 @@ The easiest way to use Gridism in your project is via the [Bower](http://twitter
 bower install gridism
 ```
 
-Elsewise, [download a zip folder](https://github.com/cobyism/gridism/archive/gh-pages.zip), extract it, and copy `gridism.css` into your project’s folder.
+Elsewise, [download the zip folder](https://github.com/cobyism/gridism/archive/gh-pages.zip), extract it, and copy `gridism.css` into your project’s folder. Boom. Done.
 
 ### 2. Link the stylesheet
 
