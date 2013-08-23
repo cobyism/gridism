@@ -1,9 +1,9 @@
 {
   "name": "gridism",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Coby Chapple",
-  "homepage": "https://github.com/cobyism/gridism/",
-  "main": "./css/gridism.css",
+  "homepage": "http://cobyism.com/gridism",
+  "main": "./gridism.css",
   "repository": {
     "type": "git",
     "url": "git://github.com/cobyism/gridism.git"
