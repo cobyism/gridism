@@ -1,6 +1,6 @@
 {
   "name": "gridism",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "author": "Coby Chapple",
   "homepage": "http://cobyism.com/gridism",
   "main": "./gridism.css",
