@@ -55,6 +55,8 @@
 .grid .two-thirds,     .grid .w-2-3 { width: 66.6665%; }
 .grid .one-quarter,    .grid .w-1-4 { width: 25%; }
 .grid .three-quarters, .grid .w-3-4 { width: 75%; }
+.grid .one-fourth,     .grid .w-1-4 { width: 25%; }
+.grid .three-fourths,  .grid .w-3-4 { width: 75%; }
 .grid .one-fifth,      .grid .w-1-5 { width: 20%; }
 .grid .two-fifths,     .grid .w-2-5 { width: 40%; }
 .grid .three-fifths,   .grid .w-3-5 { width: 60%; }
