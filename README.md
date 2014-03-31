@@ -73,7 +73,7 @@ Without this meta tag, mobiles and tablets might load your page as a scaled-down
 
 ## Contributing
 
-I’d :heart: to recieve contributions to this project. It doesn’t matter if it’s just a typo, or if you’re proposing an overhaul of the entire project—I’ll gladly take a look at your changes. Fork at will! :grinning:.
+I’d :heart: to receive contributions to this project. It doesn’t matter if it’s just a typo, or if you’re proposing an overhaul of the entire project—I’ll gladly take a look at your changes. Fork at will! :grinning:.
 
 ## License
 
