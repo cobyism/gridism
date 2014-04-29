@@ -23,6 +23,10 @@
   padding: 10px;
 }
 
+.grid .unit img {
+  max-width: 100%;
+}
+
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
 .grid .unit:first-child { padding-left: 20px; }
 .grid .unit:last-child { padding-right: 20px; }
