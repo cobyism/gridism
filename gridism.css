@@ -84,6 +84,13 @@
 .pull-left    { float: left; }
 .pull-right   { float: right; }
 
+/* A property for a better rendering of images in units: in
+   this way bigger pictures are just resized if the unit
+   becomes smaller */
+.unit img {
+  max-width: 100%;
+}
+
 /* Responsive Stuff */
 @media screen and (max-width: 568px) {
   /* Stack anything that isn’t full-width on smaller screens 
