@@ -23,10 +23,6 @@
   padding: 10px;
 }
 
-.grid .unit img {
-  max-width: 100%;
-}
-
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
 .grid .unit:first-child { padding-left: 20px; }
 .grid .unit:last-child { padding-right: 20px; }
@@ -87,6 +83,13 @@
 .align-right  { text-align: right; }
 .pull-left    { float: left; }
 .pull-right   { float: right; }
+
+/* A property for a better rendering of images in units: in
+   this way bigger pictures are just resized if the unit
+   becomes smaller */
+.unit img {
+  max-width: 100%;
+}
 
 /* Responsive Stuff */
 @media screen and (max-width: 568px) {
