@@ -93,7 +93,7 @@
 
 /* Hide elements using this class by default */
 .show-on-mobiles{
-  display: none;
+  display: none !important;
 }
 
 /* Responsive Stuff */
@@ -118,7 +118,7 @@
     display: none !important;
   }
   .show-on-mobiles{
-    display: block;
+    display: block !important;
   }
 }
 
