@@ -92,7 +92,7 @@
 }
 
 /* Hide elements using this class by default */
-.show-on-mobiles{
+.hide-on-desktop{
   display: none !important;
 }
 
@@ -117,7 +117,7 @@
   .hide-on-mobiles {
     display: none !important;
   }
-  .show-on-mobiles{
+  .hide-on-desktop{
     display: block !important;
   }
 }
