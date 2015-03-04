@@ -20,6 +20,8 @@
 .grid .unit {
   float: left;
   width: 100%;
+}
+.unit {
   padding: 10px;
 }
 
