@@ -1,3 +1,7 @@
+## :rotating_light: :warning: Attention :warning: :rotating_light:
+
+**2017 Update**: _This grid system was created almost 5 years ago now, and should be considered deprecated as these days browsers let you do much more with grids using things like Flexbox. Unless you’re looking for something really basic, you’ll probably be better off using Flexbox to achieve what you need instead. An excellent guide to getting started with Flexbox can be found here: https://css-tricks.com/snippets/css/a-guide-to-flexbox/_
+
 # Gridism
 
 A simple responsive CSS grid. [View the demo →](http://cobyism.com/gridism/)
