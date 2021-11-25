@@ -4,7 +4,7 @@
 
 # Gridism
 
-A simple responsive CSS grid. [View the demo →](http://cobyism.com/gridism/)
+A simple responsive CSS grid. [View the demo →](http://pages.cobyism.com/gridism/)
 
 ## Why?
 
